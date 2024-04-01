@@ -47,7 +47,7 @@ void main() {
         }
     }
     end_time1 = omp_get_wtime();
-    printf("With OpenMP pipeline: %f seconds\n", end_time1 - start_time1);
+    printf("With OpenMP Single Task: %f seconds\n", end_time1 - start_time1);
 
     start_time2 = omp_get_wtime();
     for (i = 0; i < NUM_DATA; ++i) {
@@ -55,5 +55,5 @@ void main() {
         process_data(generated);
     }
     end_time2 = omp_get_wtime();
-    printf("Without pipeline: %f seconds\n", end_time2 - start_time2);
+    printf("Without Single Task: %f seconds\n", end_time2 - start_time2);
 }
