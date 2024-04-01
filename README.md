@@ -1,1 +1,1 @@
-Simple examples of OpenMP implemented with C.
+## Simple examples of OpenMP implemented with C.
